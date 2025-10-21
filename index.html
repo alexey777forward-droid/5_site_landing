@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <meta charset="utf-8">
 <head>
 	<title>Junior че</title>
@@ -7,31 +7,22 @@
 	<link rel="stylesheet" href="./style.css">
 	<link rel="shortcut icon" href="icon.png">
 	<meta name="keywards" content="самообучение">
-	<meta name="description" content="kissкд">
+	<meta name="description" content="kissкoд">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=League+Spartan:wght@300;400;900&display=swap" rel="stylesheet">
 </head>
 <body>
-	<script>
-    src="./scripts.js";
-  	</script>
-	<script>
-		let userName = prompt('Как вас зовут?');
-		if (userName) {
-  		alert('Привет, ' + userName + '!');
-		window.alert('Не будешь судить Строго за сайт? ))');
-	</script>
 	<header class="header">
 		<div class="header-container">
 			<div>
-				<h1 class="header-title">mor705</h1>
-				<p class="header-subtitle">Watch</p>
-				<p class="header-description">описание часов и много много букв, может быть всё что угодно, например: в лесу родилась ёлочка. Делаю чтобы не оценили дизайн, а мои новичковые потуги в сложности кода</p>
+				<h1 class="header-title">самый большой и крутой заголовок</h1>
+				<p class="header-subtitle">Scada</p>
+				<p class="header-description">описание и много много букв, может быть всё что угодно, например: в лесу родилась ёлочка. Делаю чтобы не оценили дизайн, а мои новичковые потуги в сложности кода</p>
 			
 				<div class="buy-wrapper">
-					<a href="/" class="buy-link">buy watch</a>
-			<div class="price">1700$</div>
+					<a href="/" class="buy-link">buy scada</a>
+			<div class="price">1707$</div>
 			</div>
 		</div>
 		</div>
@@ -41,21 +32,21 @@
 			srcset="./1_start.png
 					./1_start@2x.png 2x"
 			src="./1_start.png"
-			alt="Model mor705">
+			alt="а где пикча?">
 		</div>
 	</header>
 	<main>
 		<p class="popular-title">popular</p>
-		<p class="models-title">models</p>
+		<p class="models-title">projects</p>
 		<div class="item-wrapper">
 			<div class="item-img-wrapper">
 				<img 
 				srcset="./2_mistake.png
 						./2_mistake@2x.png 2x"
 				src="./2_mistake.png"
-				alt="Model son22">
+				alt="а где пикча?">
 			</div>
-		<h2 class="item-title">Model son22</h2>
+		<h2 class="item-title">Model scada22</h2>
 		<p class="item-description">описание модели много текста и немного нейробиологии</p>
 		</div>
 		<div class="item-wrapper">
@@ -64,9 +55,9 @@
 				srcset="./3_target.png
 						./3_target@2x.png 2x"
 				src="./3_target.png"
-				alt="Model sw12">
+				alt="а где пикча?">
 			</div>
-		<h2 class="item-title">Model sw12</h2>
+		<h2 class="item-title">Model scada12</h2>
 		<p class="item-description">описание модели много текста</p>
 		</div>
 		<div class="product-description-wrapper">
@@ -79,12 +70,12 @@
 		alt="Лёша - по французки котик">
 	<h1>Друзья, привет!</h1>
 	<p>Я Лёха, иду в фронт-енд разработку.		<!-- тег для обзаца. далее текст внутри -->
-	<br> Малыми шагами уверенно к мечте		<!-- br - тег для переноса строки -->
+	<br> Малыми шагами уверенно к мечте			<!-- br - тег для переноса строки -->
 	</p>	
-	<a href="https://www.youtube.com">		<!-- a - тег для ссылок href="" абсолютный путь на диске "C" или ссылка в инет -->
+	<a href="https://www.youtube.com">			<!-- a - тег для ссылок href="" абсолютный путь на диске "C" или ссылка в инет -->
 		YouTube позже сделаю ссылку на свой канал
 	</a>
-	<br>						<!-- br - тег для переноса строки -->
+	<br>										<!-- br - тег для переноса строки -->
 	<br><b> b - тег делающий текст жирным</b>
 	<br><em> em - тег делающий текст курсивом</em>
 	<br><a href="#1_link"> a href="#1_link" - тег айдишки #1_link для ссылки-якоря на абзац или раздел сайта внутри страницы</a>
@@ -106,7 +97,7 @@
 		</li>
 	</ul>
 	<hr>						<!-- тег горизонтальной линии во всю страницу -->
-		<table border="1">			<!-- тег для таблицы -->
+		<table border="1">		<!-- тег для таблицы -->
 			<thead>				<!-- тег заголовков таблицы, верхний колонтитул -->
 			<tr>
 				<th>первый столбец</th>
@@ -144,6 +135,27 @@
 
 <div class="">						<!-- тег для придания странице особенного вида, таблицы или др. -->
 </div>
-
+	<script>
+		window.alert('Не будешь судить Строго за сайт? ))');
+	</script>
+	<button>Change user</button>
+	<script>
+    	var myButton = document.querySelector("button");
+		var myHeading = document.querySelector("h1");
+		function setUserName() {
+  		var myName = prompt("Please enter your name.");
+  		localStorage.setItem("name", myName);
+  		myHeading.textContent = "Добро пожаловать, " + myName;
+		}
+		if (!localStorage.getItem("name")) {
+  		setUserName();
+		} else {
+ 		var storedName = localStorage.getItem("name");
+  		myHeading.textContent = "Добро пожаловать, " + storedName;
+		}
+		myButton.onclick = function () {
+  		setUserName();
+		};
+	</script>
 </body>
 </html>
